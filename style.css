@@ -14,6 +14,7 @@ body{
     padding: 0;
     background-image: linear-gradient(to bottom,var(--black),var(--blue),var(--black));
     font-family: 'Quicksand', sans-serif;
+
 }
 nav {
     margin: 0px;
@@ -23,14 +24,6 @@ nav {
     width: 300px;
     height: 100px;
     margin: 10px 0px 0px 10px;
-}
-.navbar-left h1{
-    margin: 0px;
-    padding: 0px;
-    margin-right: 380px;
-    margin-top: 20px;
-    font-size: 50px;
-    color: var(--black);
 }
 .navbar-left{
     height: 110px;
@@ -71,11 +64,11 @@ nav {
 }
 .bienvenido{
     font-size: 50px;
-    color: var(--blue2);
+    color: var(--white);
 }
 .presentacion{
     font-size: 20px;
-    color: var(--blue2);
+    color: var(--white);
 }
 
 
@@ -90,7 +83,7 @@ nav {
     text-decoration: none;
 }
 .titulo-series{
-    color: var(--blue2);
+    color: var(--white);
     font-size: 30px;
     margin-left: 30px;
 }
@@ -118,7 +111,7 @@ nav {
     text-decoration: none;
 }
 .titulo-peliculas{
-    color: var(--blue2);
+    color: var(--white);
     font-size: 30px;
     margin-left: 30px;
 }
@@ -160,12 +153,12 @@ nav {
     justify-content: space-evenly;
 }
 .list-movies li h1{
-    color: var(--blue2);
+    color: var(--white);
     margin: 0px;
     width: 500px;
 }
 .list-movies li p{
-    color: var(--blue2);
+    color: var(--white);
     width: 400px;
 }
 .list-movies li div{
@@ -203,9 +196,15 @@ nav {
 }
 footer div{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
 
+}
+footer figure img{
+    margin-top: 20px;
+    width: 300px;
+    height: 100px;
 }
 footer ul{
     display: flex;
@@ -215,5 +214,29 @@ footer ul img{
     width: 60px;
     height: 60px;
 }
+footer p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: medium;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.calificacion{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.calificacion h1{
+    color: var(--white);
 
-
+}
+.fa-star::before{
+    font-size: 30px;
+}
+.calificacion .checked {
+  color: orange;
+}
